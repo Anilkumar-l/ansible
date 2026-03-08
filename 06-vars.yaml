@@ -1,7 +1,7 @@
 - name: file variables
   hosts: local  
   connection: local
-  var_files:
+  vars_files:
   - Course.yaml
   tasks:
   - name: print variables
