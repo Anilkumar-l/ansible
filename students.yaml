@@ -1,0 +1,31 @@
+- name: "anil kumar"
+  dob: "2010-04-23"
+  mobilenumber: 9676600921
+  address:
+  - flatnumber: 123
+    street: "gandhi nagar"
+    village: lakkiredypalli
+    mandal: Kurnoothala
+    type: permanant
+
+    - flatnumber: 123
+    street: "gandhi nagar"
+    village: lakkiredypalli
+    mandal: Kurnoothala
+    type: current
+
+- name: "sunil kumar"
+  dob: "2010-04-23"
+  mobilenumber: 9676600921
+  address:
+  - flatnumber: 123
+    street: "gandhi nagar"
+    village: lakkiredypalli
+    mandal: Kurnoothala
+    type: permanant
+
+    - flatnumber: 123
+    street: "gandhi nagar"
+    village: lakkiredypalli
+    mandal: Kurnoothala
+    type: current
