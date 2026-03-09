@@ -3,4 +3,7 @@
   connection: local
   tasks:
     - name: check shell module
-      ansible.builtin.shell: cat /etc/passwd > users.txt
+      # ansible.builtin.shell: cd /etc/passwd > users.txt
+    - name: check root user is not
+      ansible.builtin.shell: cat /etc/passwd | grep root
+        msg: " root user is available "
