@@ -22,4 +22,4 @@
     - name: check size or not
       ansible.builtin.debug:
         msg: "disk size matched"
-      when: "{{ SIZE }}"
+      when: "SIZE == 19.40 GB"
