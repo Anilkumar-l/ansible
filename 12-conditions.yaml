@@ -10,3 +10,8 @@
       ansible.builtin.debug:
         msg: "yes, package manager is ec2user"
       when: ansible_facts.user_id == "ec2-user"
+
+    - name: check system or not
+      ansible.builtin.debug:
+        msg: "yes, system is available"
+      when: ansible_facts.system == "Linux"
