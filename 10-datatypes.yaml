@@ -6,16 +6,16 @@
     DURATION: 140
     IS_TRUE: true
   DETAILS:
-    MONTHS: 4 months
+    MONTHS: 4
     TRAINER: "anilkumar"
   TOPICS:
-   - linux
-   - aws
-   - cloud
+  - Linux
+  - Aws
+  - Cloud
   tasks:
   - name: print datatypes
     ansible.builtin.debug:
-      msg:
+      msg: |
         program: {{ PROGRAM }}
         IS_TRUE: {{ IS_TRUE }}
         trainer: {{ TRAINER }}
