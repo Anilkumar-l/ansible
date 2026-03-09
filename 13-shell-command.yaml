@@ -4,7 +4,6 @@
   tasks:
     - name: check shell module
       # ansible.builtin.shell: cd /etc/passwd > users.txt
-    - name: check root user is not
       ansible.builtin.shell: cat /etc/passwd | grep root
       register: users_output
 
