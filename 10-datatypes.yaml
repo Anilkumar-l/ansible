@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    program: "aws with cloud"
-    duration: 140
+    PROGRAM: "aws with cloud"
+    DURATION: 140
     IS_TRUE: true
-  details:
-    months: 4 months
-    trainer: anilkumar
-  topics:
+  DETAILS:
+    MONTHS: 4 months
+    TRAINER: "anilkumar"
+  TOPICS:
    - linux
    - aws
    - cloud
@@ -16,6 +16,6 @@
   - name: print datatypes
     ansible.builtin.debug:
       msg:
-        program: {{ program }}
+        program: {{ PROGRAM }}
         IS_TRUE: {{ IS_TRUE }}
-        trainer: {{ trainer }}
+        trainer: {{ TRAINER }}
