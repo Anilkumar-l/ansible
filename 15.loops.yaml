@@ -1,0 +1,13 @@
+- name: demo on lopps
+  hosts: local
+  connection: local
+  become: yes # sudeo access
+  tasks:
+  - name: install softwares
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - mysql
+    - nginx
+    - java
