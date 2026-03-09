@@ -16,8 +16,8 @@
         msg: "yes, system is available"
       when: ansible_facts.system == "Linux"
 
-# "model": "Amazon Elastic Block Store",
-    - name: check model or not
+# "size": "19.40 GB",
+    - name: check size or not
       ansible.builtin.debug:
-        msg: "model is available"
-      when: ansible_facts.model == "Amazon Elastic Block Store"
+        msg: "size is 19.40 gb"
+      when: ansible_facts.size == "19.40 GB"
