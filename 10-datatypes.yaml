@@ -1,0 +1,21 @@
+- name: demo on datatypes
+  hosts: local
+  connection: local
+  vars:
+    program: " aws with cloud"
+    duration: 140
+    IS_TRUE: true
+  details:
+    months: 4 months
+    trainer: anilkumar
+  topics:
+   - linux
+   - aws
+   - cloud
+  tasks:
+    - name: print datatypes
+      ansible.builtin.debug:
+        msg:
+          program: {{ program }}
+          IS_TRUE: {{ IS_TRUE }}
+          trainer: {{ trainer }}
