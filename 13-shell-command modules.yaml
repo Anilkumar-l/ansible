@@ -1,0 +1,6 @@
+- name: check shell and command module
+  hosts: local
+  connection: local
+  tasks:
+    - name: check shell module
+      ansible.builtin.shell: cat /etc/passwd > users.txt
