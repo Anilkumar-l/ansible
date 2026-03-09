@@ -6,4 +6,8 @@
       # ansible.builtin.shell: cd /etc/passwd > users.txt
     - name: check root user is not
       ansible.builtin.shell: cat /etc/passwd | grep root
-        msg: " root user is available "
+       register: users_output
+    
+    - name: print output
+      ansible.builtin.debug:
+       msg: "{{ users_output }}"
