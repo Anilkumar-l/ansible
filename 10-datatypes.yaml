@@ -5,13 +5,13 @@
     PROGRAM: "aws with cloud"
     DURATION: 140
     IS_TRUE: true
-  DETAILS:
-    MONTHS: 4
-    TRAINER: "anilkumar"
-  TOPICS:
-  - Linux
-  - Aws
-  - Cloud
+    DETAILS:
+     MONTHS: 4
+     TRAINER: "anilkumar"
+    TOPICS:
+    - Linux
+    - Aws
+    - Cloud
   tasks:
   - name: print datatypes
     ansible.builtin.debug:
