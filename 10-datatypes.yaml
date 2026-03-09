@@ -18,4 +18,5 @@
       msg: |
         program: {{ PROGRAM }}
         IS_TRUE: {{ IS_TRUE }}
-        trainer: {{ TRAINER }}
+        details: {{ DETAILS }}
+        topics: {{ TOPICS }}
