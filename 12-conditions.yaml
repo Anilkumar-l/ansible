@@ -15,3 +15,9 @@
       ansible.builtin.debug:
         msg: "yes, system is available"
       when: ansible_facts.system == "Linux"
+
+# "model": "Amazon Elastic Block Store",
+    - name: check model or not
+      ansible.builtin.debug:
+        msg: "model is available"
+      when: ansible_facts.model == "Amazon Elastic Block Store"
